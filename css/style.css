@@ -1,0 +1,211 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+
+html,body{
+	height: 100%;
+}
+
+/* Divs gerais*/
+.clear{
+	clear: both;
+}
+
+.container{
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+/**************/
+header{
+	padding: 10px 2% 40px 2%;
+	background-color: #b4883c	; 
+}
+
+.logo1{
+	float: left;
+	width: 150px;
+	height: 60px;
+	background-image: url(../images/logo.png);
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+
+section.cover-form{
+	width: 100%;
+}
+
+.bg{
+	position: relative;
+	height: 520px;
+	background-position: center;
+	background-size: cover;
+	background-image: url('../images/cover-form.jpg');
+}
+
+.form-container{
+	position: absolute;
+	right: 30px;
+	top: -2.5%;
+	margin-right: 40px; 
+	width: 400px;
+	height: 105%;
+	box-shadow: 2px  2px 7px 1px;
+	background-color: white;
+}
+
+.form-container h2{
+	padding: 20px 14px;
+	color: black;
+	font-size: 18px;
+	font-weight: normal;
+	background-color: #d89118;
+}
+
+.form-container form{
+	margin-top: 10px;
+	padding: 15px;
+}
+
+.form-container form p{
+	font-size: 14px;
+	color: #525252;
+}
+
+.form-wraper:not(:first-child){
+	margin-top: 40px;
+}
+
+.form-wraper:last-child{
+	margin-top: 25px;
+}
+
+.form-wraper:last-child p{
+	color: red;
+}
+
+.form-container form input[type=text]{
+	width: 100%;
+	height: 45px;
+	border: 1px solid #ccc;
+	line-height: 45px;
+	padding-left: 10px;
+}
+
+.form-container form input[type=submit]{
+	/*background-color: #033C50;*/
+	background-color: rgb(39, 63, 82);
+	text-transform: uppercase;
+	color: white;
+	width: 100%;
+	font-size: 25px;
+	height: 50px;
+	cursor: pointer;
+	border: 0;
+}
+
+section.chamada{
+	z-index: 1;
+	width: 100%;
+	padding: 50px 0;
+	text-align: center;
+	background-color: #7c6757;
+}
+
+section.chamada h2{
+	display: inline-block;
+	width: 98%;
+	max-width: 700px;
+	color: white;
+	font-size: 24px;
+	font-weight: normal;
+}
+
+section.chamada p{
+	display: inline-block;
+	width: 98%;
+	max-width: 400px;
+	color: white;
+	font-size: 19px;
+}
+.mosaico-flex{
+	display: flex;
+}
+
+.item-1{
+	background-position: center;
+	background-size: cover;
+	width: 60%;
+}
+
+.item-2{
+	width: 40%;
+	padding: 60px;
+	background-color: #a2834e;
+	color: white;
+}
+
+footer{
+	text-align: center;
+	padding: 30px 0;
+	background-color: #f7ead4;
+}
+
+footer p{
+	margin-top: 8px;
+}
+
+
+footer a,footer a:visited{
+	text-decoration: none;
+	color: purple;
+}
+
+@media screen and (max-width: 768px){
+	.mosaico-flex{
+		display: block;
+	}
+
+	.item-1{
+		padding-top: 80%;
+		width: 100%;
+	}
+	.item-2{
+		width: 100%;
+		text-align: justify;
+	}
+}
+
+@media screen and (max-width: 510px){
+	
+	header{
+		text-align: center;
+	}
+
+	.logo1{
+		display: inline-block;
+		float: none;
+		margin-top: 10px;
+	}
+}
+
+@media screen and (max-width: 960px){
+	.bg{
+		text-align: center;
+		padding: 40px 0;
+		height: auto;
+	}
+
+	.form-container{
+		width: 96%;
+		max-width: 400px;
+		height: auto;
+		position: static;
+		margin-right: 0; 
+		display: inline-block;
+	}
+}
